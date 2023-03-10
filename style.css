@@ -1,0 +1,124 @@
+*{
+	margin: 0;
+	font-family: overpass;
+	color: rgb(64, 64, 66);
+}
+
+h2, h3{
+	font-family: chivo;
+}
+
+.banner{
+	background-image: url('images/background.jpg');
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	padding: 160px 0;
+	line-height: 70px;
+}
+
+.banner h1{
+	font-family: chivo;
+	color: white;
+	font-weight: bolder;
+	font-size: 45px;
+}
+
+.banner p{
+	color: rgba(255, 255, 255, .6);
+	font-size: 25px;
+}
+
+.button{
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	background-color: rgb(26, 72, 227);
+	text-decoration: none;
+	padding: 15px 50px;
+	border-radius: 4px;
+}
+
+.button:hover{
+	background-color: rgb(24, 56, 198);
+}
+
+.container{
+	margin: 55px;
+	align-content: center;
+}
+
+.container h2{
+	font-size: 26px;
+	margin-bottom: 40px;
+}
+
+.cards{
+	display: grid;
+	grid-gap: 15px;
+}
+
+@media (min-width: 300px) {
+	.container{
+		width: 300px;
+	}
+	.cards{
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@media (min-width: 700px) {
+	.container{
+		width: 600px;
+	}
+	.cards{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 1000px) {
+	.container{
+		width: 900px;
+	}
+	.cards{
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.card{
+	width: 240px;
+	border-radius: 4px;
+	box-shadow: 0 0 15px rgba(0,0,0,.1);
+	align-items: center;
+	padding: 25px;
+	margin: 10px;
+}
+
+.card img{
+	object-fit: cover;
+	width: 240px;
+	height: 160px;
+	border-radius: 4px;
+}
+
+.card p{
+	font-size: 18px;
+	width: 240px;
+}
+
+.card h3{
+	padding-bottom: 20px;
+	font-size: 20px;
+}
+
+.footer{
+	background-color: rgb(64, 64, 66);
+	padding: 70px;
+	object-position: center;
+}
+
+.footer p{
+	color: white;
+	font-weight: 200;
+	font-size: 20px;
+}
